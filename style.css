@@ -1,0 +1,52 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	background: #2b2e36;
+	font-size: 12px;
+}
+.all{
+	width: 1199px;
+	margin: 0 auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.title span {
+	font-size: 36px;
+	display: inline-block;
+	margin-right: 50px;
+}
+.all__wr{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+input{
+	color: #fff;
+	background: #2b2e36;
+	font-size: 30px;
+}
+.item__title{
+	color: #a2bac1;
+}
+.all__item{
+	width: 23%;
+	margin-top: 25px;
+}
+.item{
+	background: #32363f;
+	margin-top: 10px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+.item_month{
+	width: 65%;
+}
+.item_total{
+	width: 35%;
+	color: #39ff08;
+}
+.item__title .item_total{
+	color: #a2bac1;
+}
