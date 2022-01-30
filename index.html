@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Калькулятор Х100</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="">
+	<link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+
+	<div class="all">
+		<div class="choose">
+			<div class="choose__left">
+				<label class="title" for="data">
+					<span class="title__title title__title_range">Введите сумму вложения:</span>
+					<input type="text" id="data" name="data" value="10000" placeholder="10 000">
+
+				</label>
+				<label class="title" for="month">
+					<p class="title__title title__title_range">Выберите количество месяцев:</p>
+					<input type="range" id="month" min="13" max="120" name="month" value="120">
+					<span id="title__month" class="title__month">1</span>
+				</label>
+			</div>
+			<div class="choose__right">
+				<p class="choose__right_text">По истечении установленого Вами срока, Вы дополнительно получите:</p>
+				<p id="choose__right_month" class="choose__right_month">1</p>
+			</div>
+			
+		</div>
+		
+
+<!-- 		<div class="all__wr">
+			<div class="all__item">
+				<div class="item item__title">
+					<span class="item_month">Месяцев с момента вложения</span>
+					<span class="item_total">Сумма на момент</span>
+				</div>
+				<div class="item">
+					<span class="item_month">13</span>
+					<span class="item_total" id="total1">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">14</span>
+					<span class="item_total" id="total2">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">15</span>
+					<span class="item_total" id="total3">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">16</span>
+					<span class="item_total" id="total4">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">17</span>
+					<span class="item_total" id="total5">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">18</span>
+					<span class="item_total" id="total6">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">19</span>
+					<span class="item_total" id="total7">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">20</span>
+					<span class="item_total" id="total8">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">21</span>
+					<span class="item_total" id="total9">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">22</span>
+					<span class="item_total" id="total10">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">23</span>
+					<span class="item_total" id="total11">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">24</span>
+					<span class="item_total" id="total12">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">25</span>
+					<span class="item_total" id="total13">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">26</span>
+					<span class="item_total" id="total14">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">27</span>
+					<span class="item_total" id="total15">Итого</span>
+				</div>
+			</div>
+			<div class="all__item">
+				<div class="item item__title">
+					<span class="item_month">Месяцев с момента вложения</span>
+					<span class="item_total">Сумма на момент</span>
+				</div>
+				<div class="item">
+					<span class="item_month">28</span>
+					<span class="item_total" id="total16">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">29</span>
+					<span class="item_total" id="total17">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">30</span>
+					<span class="item_total" id="total18">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">31</span>
+					<span class="item_total" id="total19">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">32</span>
+					<span class="item_total" id="total20">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">33</span>
+					<span class="item_total" id="total21">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">34</span>
+					<span class="item_total" id="total22">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">35</span>
+					<span class="item_total" id="total23">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">36</span>
+					<span class="item_total" id="total24">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">37</span>
+					<span class="item_total" id="total25">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">38</span>
+					<span class="item_total" id="total26">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">39</span>
+					<span class="item_total" id="total27">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">40</span>
+					<span class="item_total" id="total28">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">41</span>
+					<span class="item_total" id="total29">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">42</span>
+					<span class="item_total" id="total30">Итого</span>
+				</div>
+			</div>
+			<div class="all__item">
+				<div class="item item__title">
+					<span class="item_month">Месяцев с момента вложения</span>
+					<span class="item_total">Сумма на момент</span>
+				</div>
+				<div class="item">
+					<span class="item_month">43</span>
+					<span class="item_total" id="total31">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">44</span>
+					<span class="item_total" id="total32">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">45</span>
+					<span class="item_total" id="total33">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">46</span>
+					<span class="item_total" id="total34">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">47</span>
+					<span class="item_total" id="total35">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">48</span>
+					<span class="item_total" id="total36">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">49</span>
+					<span class="item_total" id="total37">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">50</span>
+					<span class="item_total" id="total38">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">51</span>
+					<span class="item_total" id="total39">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">52</span>
+					<span class="item_total" id="total40">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">53</span>
+					<span class="item_total" id="total41">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">54</span>
+					<span class="item_total" id="total42">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">55</span>
+					<span class="item_total" id="total43">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">56</span>
+					<span class="item_total" id="total44">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">57</span>
+					<span class="item_total" id="total45">Итого</span>
+				</div>
+			</div>
+			<div class="all__item">
+				<div class="item item__title">
+					<span class="item_month">Месяцев с момента вложения</span>
+					<span class="item_total">Сумма на момент</span>
+				</div>
+				<div class="item">
+					<span class="item_month">58</span>
+					<span class="item_total" id="total46">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">59</span>
+					<span class="item_total" id="total47">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">60</span>
+					<span class="item_total" id="total48">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">61</span>
+					<span class="item_total" id="total49">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">62</span>
+					<span class="item_total" id="total50">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">63</span>
+					<span class="item_total" id="total51">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">64</span>
+					<span class="item_total" id="total52">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">65</span>
+					<span class="item_total" id="total53">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">66</span>
+					<span class="item_total" id="total54">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">67</span>
+					<span class="item_total" id="total55">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">68</span>
+					<span class="item_total" id="total56">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">69</span>
+					<span class="item_total" id="total57">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">70</span>
+					<span class="item_total" id="total58">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">71</span>
+					<span class="item_total" id="total59">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">72</span>
+					<span class="item_total" id="total60">Итого</span>
+				</div>
+			</div>
+			<div class="all__item">
+				<div class="item item__title">
+					<span class="item_month">Месяцев с момента вложения</span>
+					<span class="item_total">Сумма на момент</span>
+				</div>
+				<div class="item">
+					<span class="item_month">73</span>
+					<span class="item_total" id="total61">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">74</span>
+					<span class="item_total" id="total62">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">75</span>
+					<span class="item_total" id="total63">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">76</span>
+					<span class="item_total" id="total64">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">77</span>
+					<span class="item_total" id="total65">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">78</span>
+					<span class="item_total" id="total66">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">79</span>
+					<span class="item_total" id="total67">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">80</span>
+					<span class="item_total" id="total68">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">81</span>
+					<span class="item_total" id="total69">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">82</span>
+					<span class="item_total" id="total70">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">83</span>
+					<span class="item_total" id="total71">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">84</span>
+					<span class="item_total" id="total72">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">85</span>
+					<span class="item_total" id="total73">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">86</span>
+					<span class="item_total" id="total74">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">87</span>
+					<span class="item_total" id="total75">Итого</span>
+				</div>
+			</div>
+			<div class="all__item">
+				<div class="item item__title">
+					<span class="item_month">Месяцев с момента вложения</span>
+					<span class="item_total">Сумма на момент</span>
+				</div>
+				<div class="item">
+					<span class="item_month">88</span>
+					<span class="item_total" id="total76">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">89</span>
+					<span class="item_total" id="total77">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">90</span>
+					<span class="item_total" id="total78">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">91</span>
+					<span class="item_total" id="total79">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">92</span>
+					<span class="item_total" id="total80">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">93</span>
+					<span class="item_total" id="total81">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">94</span>
+					<span class="item_total" id="total82">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">95</span>
+					<span class="item_total" id="total83">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">96</span>
+					<span class="item_total" id="total84">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">97</span>
+					<span class="item_total" id="total84">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">98</span>
+					<span class="item_total" id="total85">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">99</span>
+					<span class="item_total" id="total86">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">100</span>
+					<span class="item_total" id="total87">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">101</span>
+					<span class="item_total" id="total88">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">102</span>
+					<span class="item_total" id="total89">Итого</span>
+				</div>
+			</div>
+			<div class="all__item">
+				<div class="item item__title">
+					<span class="item_month">Месяцев с момента вложения</span>
+					<span class="item_total">Сумма на момент</span>
+				</div>
+				<div class="item">
+					<span class="item_month">103</span>
+					<span class="item_total" id="total90">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">104</span>
+					<span class="item_total" id="total91">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">105</span>
+					<span class="item_total" id="total92">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">106</span>
+					<span class="item_total" id="total93">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">107</span>
+					<span class="item_total" id="total94">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">108</span>
+					<span class="item_total" id="total95">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">109</span>
+					<span class="item_total" id="total96">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">110</span>
+					<span class="item_total" id="total97">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">111</span>
+					<span class="item_total" id="total98">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">112</span>
+					<span class="item_total" id="total99">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">113</span>
+					<span class="item_total" id="total100">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">114</span>
+					<span class="item_total" id="total101">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">115</span>
+					<span class="item_total" id="total102">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">116</span>
+					<span class="item_total" id="total103">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">117</span>
+					<span class="item_total" id="total104">Итого</span>
+				</div>
+			</div>
+			<div class="all__item">
+				<div class="item item__title">
+					<span class="item_month">Месяцев с момента вложения</span>
+					<span class="item_total">Сумма на момент</span>
+				</div>
+				<div class="item">
+					<span class="item_month">118</span>
+					<span class="item_total" id="total105">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">119</span>
+					<span class="item_total" id="total106">Итого</span>
+				</div>
+				<div class="item">
+					<span class="item_month">120</span>
+					<span class="item_total" id="total107">Итого</span>
+				</div>
+			</div>
+		</div> -->
+		
+
+		
+	</div>
+	
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
