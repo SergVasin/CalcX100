@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<title>Аккордеон</title>
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="">
+	<link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+	<link href="style.css" rel="stylesheet" type="text/css"/> -->
+	<style type="text/css">
+		body{
+	/*background-color: #03a9f4;
+	font-family: 'Zen Dots', cursive;
+	color: #FFFFFF;
+	font-size: 16px;*/
+	margin: 0;
+}
+.container{
+	width: 1200px;
+	margin: auto;
+}
+.accord {
+	/*background-color: #03a9f4;*/
+	font-size: 16px;
+}
+.title{
+	text-align: center;
+}
+
+.accord_block {
+	margin-bottom: 15px;
+	/*box-shadow: 0 0 5px rgb(0 0 0 / 40%);*/
+
+}
+.accord_title {
+	    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border-bottom: 1px solid #fff;*/
+    font-size: 18px;
+    background-color: #2196f3;
+	color: #FFFFFF;
+	box-shadow: 0 0 5px rgb(0 0 0 / 40%);
+
+}
+.accord_title__text {
+	padding-right: 45px;
+
+}
+.accord_title__img {
+	cursor: pointer;
+	font-size: 22px;
+}
+.accord_text {
+	padding: 15px 30px 15px 15px;
+	display: none;
+	background-color: #fff;
+	color: #000;
+	box-shadow: inset 0 0 5px rgb(0 0 0 / 20%), 0 0 5px rgb(0 0 0 / 20%);
+}
+/*.accord_text_show{
+	display: block;
+}*/
+.accord_rotate {
+    transform: rotate(45deg);
+}
+.accord_color{
+	background-color: #673ab7;
+	color: #FFFFFF;
+	box-shadow: 0 0 10px rgb(0 0 0 / 60%);
+}
+
+@media screen and (max-width: 1300px){
+.container{
+	width: 100%;
+}
+.accord {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+}
+	</style>
+	
+</head>
+<body>
+	<section class="accord">
+		<div class="container">
+			<h1 class="title">Аккордеон</h1>
+			<div class="accord_block">
+				<div class="accord_title">
+					<div class="accord_title__text">Какой-то заголовок</div>
+					<div class="accord_title__img">+</div>
+				</div>
+				<div class="accord_text">Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст</div>
+			</div>
+			<div class="accord_block">
+				<div class="accord_title">
+					<div class="accord_title__text">Какой-то заголовок Какой-то заголовок Какой-то заголовок Какой-то заголовок Какой-то заголовок Какой-то заголовок Какой-то заголовок Какой-то заголовок Какой-то заголовок</div>
+					<div class="accord_title__img">+</div>
+				</div>
+				<div class="accord_text">Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст</div>
+			</div>
+			<div class="accord_block">
+				<div class="accord_title">
+					<div class="accord_title__text">Какой-то заголовок</div>
+					<div class="accord_title__img">+</div>
+				</div>
+				<div class="accord_text">Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст Какой-то текст</div>
+			</div>
+		</div>
+		
+	</section>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- <script src="script.js"></script> -->
+	<script type="text/javascript">
+			$( ".accord_title__img" ).click(function() {
+	  // $(".accord_text").hide();
+	  $(this).parents(".accord_block").find(".accord_text").slideToggle(200);
+	  // $(this).parents(".accord_block").find(".accord_text").toggleClass("accord_color");
+	  $(this).parents(".accord_block").find(".accord_title").toggleClass("accord_color");
+	  $(this).toggleClass("accord_rotate");
+	});
+	</script>
+</body>
+</html>
